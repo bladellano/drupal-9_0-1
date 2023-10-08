@@ -5,6 +5,7 @@
 /web/themes/contrib/
 /web/profiles/contrib/
 /web/libraries/
+/web/sites/development.services.yml
 
 # Ignore sensitive information
 /web/sites/*/settings.local.php
@@ -22,7 +23,6 @@ settings.json
 .editorconfig
 
 *.zip
-# *.sql
 /web/.csslintrc
 /web/.eslintignore
 /web/.eslintrc.json

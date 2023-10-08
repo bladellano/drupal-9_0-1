@@ -1,4 +1,4 @@
-# Introduction learnin Drupal...
+# Introduction learning Drupal...
 
 ## Incomplete documentation
 
@@ -20,12 +20,22 @@ sudo chmod 775 sites/default/settings.php
 
 ```
 
-Comands basics
+Comandos básicos
 
 ```bash
-./vendor/bin/drush cex 
-./vendor/bin/drush sql-dump > ./database/dump_$(date +'%F_%H%M%S').sql
+drush cex 
+drush sql-dump > ./database/dump_$(date +'%F_%H%M%S').sql
 
-./vendor/bin/drush cr
+drush cr
+drush sqlc < database/dump_2023-10-08_192505.sql
+
+```
+
+Passos importar e restaurar um projeto Drupal
+
+```bash
+'drush sqlc < database/{last_dump}}.sql'
+Copiar a pasta 'files' para o novo clone.
+'drush cr' em seguida
 
 ```
