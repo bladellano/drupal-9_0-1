@@ -22,7 +22,7 @@ settings.json
 .editorconfig
 
 *.zip
-*.sql
+# *.sql
 /web/.csslintrc
 /web/.eslintignore
 /web/.eslintrc.json
