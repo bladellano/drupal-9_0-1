@@ -1,0 +1,27 @@
+uuid: 2d8d3555-669a-4a55-b1ed-52f372c2d9d4
+langcode: pt-br
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - xinguBootstrap
+_core:
+  default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
+id: xinguBootstrap_main_menu
+theme: xinguBootstrap
+region: header
+weight: 6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navegação principal'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

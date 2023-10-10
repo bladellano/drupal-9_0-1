@@ -1,0 +1,20 @@
+uuid: b0caaa2d-2b29-4017-bae1-3ea956f6ea52
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - xinguBootstrap
+id: breadcrumbs
+theme: xinguBootstrap
+region: header
+weight: -7
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

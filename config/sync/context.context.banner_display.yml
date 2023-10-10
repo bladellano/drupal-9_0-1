@@ -1,0 +1,99 @@
+uuid: 183d71f0-a990-4f3a-a41a-2035145001da
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.menu-principal---xingu-
+    - views.view.banner_por_pagina
+  module:
+    - node
+    - system
+    - views
+label: 'Exibição de Banner'
+name: banner_display
+group: null
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: a25a3f62-6472-4ccb-8346-1ef0805b9ada
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      page: page
+reactions:
+  blocks:
+    id: blocks
+    uuid: a5ef246a-c5a8-4739-bac5-51a67dbb321b
+    blocks:
+      009d626e-3aa6-4f5d-b9d2-42cd953369b9:
+        uuid: 009d626e-3aa6-4f5d-b9d2-42cd953369b9
+        id: 'views_block:banner_por_pagina-block_1'
+        label: ''
+        provider: views
+        label_display: '0'
+        region: header
+        weight: '0'
+        custom_id: views_block_banner_por_pagina_block_1
+        theme: xinguBootstrap
+        css_class: banner-page-custom
+        unique: 0
+        context_id: banner_display
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+      a96dd0f0-8cba-412d-aae2-cb61efc60459:
+        uuid: a96dd0f0-8cba-412d-aae2-cb61efc60459
+        id: 'system_menu_block:menu-principal---xingu-'
+        label: 'Menu Principal - Xingu+'
+        provider: system
+        label_display: '0'
+        region: header
+        weight: '-1'
+        custom_id: system_menu_block_menu_principal_xingu_
+        theme: xinguBootstrap
+        css_class: ''
+        unique: 0
+        context_id: banner_display
+        context_mapping: {  }
+        level: '1'
+        depth: '0'
+        expand_all_items: 0
+        third_party_settings: {  }
+      d98b356c-f163-4cab-a45e-74469a838bc9:
+        uuid: d98b356c-f163-4cab-a45e-74469a838bc9
+        id: system_breadcrumb_block
+        label: Breadcrumbs
+        provider: system
+        label_display: '0'
+        region: header
+        weight: '1'
+        custom_id: system_breadcrumb_block
+        theme: xinguBootstrap
+        css_class: ''
+        unique: 0
+        context_id: banner_display
+        context_mapping: {  }
+        third_party_settings: {  }
+      86ff261d-67f0-453b-a0fb-b34bd162849e:
+        uuid: 86ff261d-67f0-453b-a0fb-b34bd162849e
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: '0'
+        region: header
+        weight: '2'
+        custom_id: page_title_block
+        theme: xinguBootstrap
+        css_class: ''
+        unique: 0
+        context_id: banner_display
+        context_mapping: {  }
+        third_party_settings: {  }
+    include_default_blocks: 0
+    saved: false
+weight: 0
