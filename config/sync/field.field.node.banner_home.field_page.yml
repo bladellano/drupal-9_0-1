@@ -1,0 +1,29 @@
+uuid: feca0063-60b0-4409-a43d-1b4f7f64d6e2
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page
+    - node.type.banner_home
+    - node.type.page
+id: node.banner_home.field_page
+field_name: field_page
+entity_type: node
+bundle: banner_home
+label: Página
+description: 'Ribeye swine ham hock tail meatloaf porchetta pork loin landjaeger '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      page: page
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

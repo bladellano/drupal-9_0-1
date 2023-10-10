@@ -1,0 +1,22 @@
+uuid: 81ae0b10-35b5-40b7-af99-dbbb1ae91a88
+langcode: pt-br
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - xinguBootstrap
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: xinguBootstrap_help
+theme: xinguBootstrap
+region: header
+weight: 2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ajuda
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 42fdc7d5-4fe8-4a0e-a7c7-c5fd67f3255b
+langcode: pt-br
+status: true
+dependencies:
+  theme:
+    - xinguBootstrap
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: xinguBootstrap_primary_local_tasks
+theme: xinguBootstrap
+region: header
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Abas primárias'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

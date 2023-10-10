@@ -1,0 +1,22 @@
+uuid: 06ec3264-999b-4733-8508-eea239b63afa
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - xinguBootstrap
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: xinguBootstrap_content
+theme: xinguBootstrap
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Conteúdo da página principal'
+  label_display: '0'
+  provider: system
+visibility: {  }
