@@ -1,0 +1,25 @@
+uuid: 75e38013-8403-4666-9f8d-d59c0ae968ef
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.menu-principal---xingu-
+  module:
+    - system
+  theme:
+    - xinguBootstrap
+id: menuprincipalxingu
+theme: xinguBootstrap
+region: header
+weight: -8
+provider: null
+plugin: 'system_menu_block:menu-principal---xingu-'
+settings:
+  id: 'system_menu_block:menu-principal---xingu-'
+  label: 'Menu Principal - Xingu+'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

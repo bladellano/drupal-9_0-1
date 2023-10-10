@@ -1,0 +1,52 @@
+uuid: 5cdd57a9-0a5e-493e-a182-7081a0a9b3aa
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.banner_home.field_image_banner
+    - field.field.node.banner_home.field_link_banner
+    - field.field.node.banner_home.field_page
+    - node.type.banner_home
+  module:
+    - image
+    - link
+    - user
+id: node.banner_home.default
+targetEntityType: node
+bundle: banner_home
+mode: default
+content:
+  field_image_banner:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link_banner:
+    type: link
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_page:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  links: true

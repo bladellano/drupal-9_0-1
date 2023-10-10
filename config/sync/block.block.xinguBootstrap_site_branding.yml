@@ -1,0 +1,25 @@
+uuid: 67e7df49-3e61-4f43-ad07-1045919efd47
+langcode: pt-br
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - xinguBootstrap
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: xinguBootstrap_site_branding
+theme: xinguBootstrap
+region: header
+weight: 3
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Definição de marca do site'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

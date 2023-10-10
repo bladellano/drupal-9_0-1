@@ -1,0 +1,23 @@
+uuid: 85a0d06d-f98a-44e5-8f21-cbc66773d435
+langcode: pt-br
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - xinguBootstrap
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: xinguBootstrap_search_form_wide
+theme: xinguBootstrap
+region: header
+weight: -3
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulário de busca (largo)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }
