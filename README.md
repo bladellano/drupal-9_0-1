@@ -2,7 +2,7 @@
 
 ### Incomplete documentation
 
-Este eh um documentacao para o aprendizado em drupal que estara sempre em atualizacao.
+This is documentation for learning Drupal that will always be up-to-date.
 
 ```python   
 
