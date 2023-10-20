@@ -1,0 +1,65 @@
+uuid: c3667f2b-6318-4431-aa19-5ffb20ef6b1e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.banner_display
+  module:
+    - node
+    - system
+    - views
+label: 'Paginas Basicas com Banner'
+name: basic_pages_with_banner
+group: null
+description: 'Nesse contexto sera exibido paginas basicas com banner no topo'
+requireAllConditions: false
+disabled: false
+conditions:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: ccc64920-2779-4e65-b92e-fb9c04ca14a9
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      page: page
+reactions:
+  blocks:
+    id: blocks
+    uuid: 908cc286-df02-413c-9ad7-21198bfd9b0c
+    blocks:
+      1181604f-7fde-4a77-bc6b-b2f28a3da608:
+        uuid: 1181604f-7fde-4a77-bc6b-b2f28a3da608
+        id: system_breadcrumb_block
+        label: Breadcrumbs
+        provider: system
+        label_display: '0'
+        region: breadcrumb
+        weight: '0'
+        custom_id: system_breadcrumb_block
+        theme: xinguBootstrap
+        css_class: ''
+        unique: 0
+        context_id: basic_pages_with_banner
+        context_mapping: {  }
+        third_party_settings: {  }
+      746e641a-f19f-43d2-b76a-1026f9d83eac:
+        uuid: 746e641a-f19f-43d2-b76a-1026f9d83eac
+        id: 'views_block:banner_display-block_banner_display'
+        label: ''
+        provider: views
+        label_display: '0'
+        region: breadcrumb
+        weight: '-1'
+        custom_id: views_block_banner_display_block_banner_display
+        theme: xinguBootstrap
+        css_class: ''
+        unique: 0
+        context_id: basic_pages_with_banner
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+    include_default_blocks: 0
+    saved: false
+weight: 0

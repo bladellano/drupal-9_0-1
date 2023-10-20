@@ -1,0 +1,34 @@
+uuid: adec3938-4f12-498b-813e-fb6a4a188b29
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_botao
+    - paragraphs.paragraphs_type.paragraph_banner
+    - paragraphs.paragraphs_type.paragraph_botao
+  module:
+    - entity_reference_revisions
+id: paragraph.paragraph_banner.field_botao
+field_name: field_botao
+entity_type: paragraph
+bundle: paragraph_banner
+label: Botão
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      paragraph_botao: paragraph_botao
+    negate: 0
+    target_bundles_drag_drop:
+      paragraph_banner:
+        weight: 4
+        enabled: false
+      paragraph_botao:
+        weight: 3
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,21 @@
+uuid: 85717ad7-d074-463e-a553-f7aac32d1f3f
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_modelo
+    - paragraphs.paragraphs_type.paragraph_botao
+  module:
+    - options
+id: paragraph.paragraph_botao.field_modelo
+field_name: field_modelo
+entity_type: paragraph
+bundle: paragraph_botao
+label: Modelo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,23 @@
+uuid: 0be8466a-66cd-41dc-a4b2-a3f0a33b1df0
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.paragraph_botao
+  module:
+    - link
+id: paragraph.paragraph_botao.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: paragraph_botao
+label: Link
+description: 'Url de destino'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

@@ -1,0 +1,22 @@
+uuid: d83b3eb2-63e2-44ca-b35f-4c443ed58bc8
+langcode: pt-br
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - xinguBootstrap
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: xinguBootstrap_messages
+theme: xinguBootstrap
+region: header
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensagens de status'
+  label_display: '0'
+  provider: system
+visibility: {  }

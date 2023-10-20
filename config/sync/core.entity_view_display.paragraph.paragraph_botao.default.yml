@@ -1,0 +1,54 @@
+uuid: 082fcd3f-9620-4a63-8d3c-cc0eec496d20
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_botao.field_cor_da_fonte
+    - field.field.paragraph.paragraph_botao.field_link
+    - field.field.paragraph.paragraph_botao.field_modelo
+    - field.field.paragraph.paragraph_botao.field_title
+    - paragraphs.paragraphs_type.paragraph_botao
+  module:
+    - link
+    - options
+id: paragraph.paragraph_botao.default
+targetEntityType: paragraph
+bundle: paragraph_botao
+mode: default
+content:
+  field_cor_da_fonte:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_modelo:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,47 @@
+uuid: 35ee5e83-2661-4ffa-bf80-7e33738cdaee
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_banner.field_background
+    - field.field.paragraph.paragraph_banner.field_botao
+    - field.field.paragraph.paragraph_banner.field_title
+    - image.style.full_screen_banner
+    - paragraphs.paragraphs_type.paragraph_banner
+  module:
+    - entity_reference_revisions
+    - image
+id: paragraph.paragraph_banner.default
+targetEntityType: paragraph
+bundle: paragraph_banner
+mode: default
+content:
+  field_background:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: full_screen_banner
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_botao:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

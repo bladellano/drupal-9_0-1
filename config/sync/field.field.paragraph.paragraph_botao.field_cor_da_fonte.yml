@@ -1,0 +1,19 @@
+uuid: 0cb34ad5-be47-4995-bec8-978cbc49d9f1
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cor_da_fonte
+    - paragraphs.paragraphs_type.paragraph_botao
+id: paragraph.paragraph_botao.field_cor_da_fonte
+field_name: field_cor_da_fonte
+entity_type: paragraph
+bundle: paragraph_botao
+label: 'Cor da fonte'
+description: 'Valor hexadecimal'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

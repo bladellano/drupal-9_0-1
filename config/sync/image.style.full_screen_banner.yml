@@ -1,0 +1,23 @@
+uuid: 1ecec229-1116-4be6-8ef2-9596bcd70dc7
+langcode: pt-br
+status: true
+dependencies: {  }
+name: full_screen_banner
+label: 'Full Screen Banner'
+effects:
+  3c3f9816-0fba-469c-89e8-c3551f0caff3:
+    uuid: 3c3f9816-0fba-469c-89e8-c3551f0caff3
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: null
+      upscale: false
+  d9db66df-f1d0-4183-ab4c-beebdbdfed8d:
+    uuid: d9db66df-f1d0-4183-ab4c-beebdbdfed8d
+    id: image_crop
+    weight: 2
+    data:
+      width: 1920
+      height: 1080
+      anchor: center-center
