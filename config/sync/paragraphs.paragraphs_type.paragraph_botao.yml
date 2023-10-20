@@ -1,0 +1,12 @@
+uuid: 53510fcc-fdbf-4377-8713-b7855c9b616e
+langcode: pt-br
+status: true
+dependencies:
+  content:
+    - 'file:file:c44dee3a-a839-4d8b-a70f-dbd71622daa6'
+id: paragraph_botao
+label: 'Paragraph Botão'
+icon_uuid: c44dee3a-a839-4d8b-a70f-dbd71622daa6
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMTUgMTJoLTNtMCAwSDltMyAwVjltMCAzdjNtMTAtM2MwIDQuNzE0IDAgNy4wNzEtMS40NjUgOC41MzVDMTkuMDcyIDIyIDE2LjcxNCAyMiAxMiAyMnMtNy4wNzEgMC04LjUzNi0xLjQ2NUMyIDE5LjA3MiAyIDE2LjcxNCAyIDEyczAtNy4wNzEgMS40NjQtOC41MzZDNC45MyAyIDcuMjg2IDIgMTIgMmM0LjcxNCAwIDcuMDcxIDAgOC41MzUgMS40NjRjLjk3NC45NzQgMS4zIDIuMzQzIDEuNDEgNC41MzYiLz48L3N2Zz4='
+description: ''
+behavior_plugins: {  }

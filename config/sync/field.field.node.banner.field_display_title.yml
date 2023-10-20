@@ -1,0 +1,19 @@
+uuid: c99fcc6d-70cf-4ac9-8404-dc7d54a9abb1
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_title
+    - node.type.banner
+id: node.banner.field_display_title
+field_name: field_display_title
+entity_type: node
+bundle: banner
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

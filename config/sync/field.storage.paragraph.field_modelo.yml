@@ -1,0 +1,39 @@
+uuid: 8cba7709-8b7c-4770-b2a4-6210fa458946
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_modelo
+field_name: field_modelo
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: default
+      label: Default
+    -
+      value: btn-primary
+      label: Primary
+    -
+      value: btn-success
+      label: Success
+    -
+      value: btn-warning
+      label: Warning
+    -
+      value: btn-danger
+      label: Danger
+    -
+      value: btn-info
+      label: Info
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

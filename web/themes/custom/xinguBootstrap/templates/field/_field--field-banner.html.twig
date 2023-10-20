@@ -1,0 +1,13 @@
+<section id="banner-xingu" style="background: url('{{ banner.content.image_url }}');">
+	<div>
+
+		{% if banner.content.title %}
+			<h2>{{ banner.content.title }}</h2>
+	  	{% endif %}
+
+		{% if banner.button %}
+			<a href="{{ banner.button.link }}" class="btn {{ banner.button.type }}">{{ banner.button.text }}</a>
+		{% endif %}
+
+	</div>
+</section>

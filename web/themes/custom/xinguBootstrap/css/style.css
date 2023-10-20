@@ -1,0 +1,98 @@
+#banner-xingu {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+#banner-xingu h2 {
+    color: #fff;
+    font-weight: bold;
+}
+
+#banner-xingu default {
+    color: #fff;
+}
+
+#banner-xingu .default {
+    background-color: #921e20;
+    border-color: #921e20;
+    color: #fff;
+    padding: 8px 26px;
+    text-transform: uppercase;
+}
+
+#banner-xingu .default:hover {
+    background-color: #b42c2e;
+    border-color: #b42c2e;
+    color: #fff;
+}
+
+/* Estilos para o menu de navegação Bootstrap 5 */
+.navbar {
+    background-color: #333;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-item.dropdown .dropdown-menu a {
+    color: #333;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    background-color: #fff;
+}
+
+/* Custom menu... */
+.nav {
+    flex-direction: row;
+    justify-content: center;
+    background: url('../images/bg-menu.gif');
+    background-size: 170px auto;
+    background-position: center 55px;
+}
+
+.menu--menu-principal---xingu-::after {
+    content: '';
+    display: block;
+    height: 15px;
+    background: url('../images/bg-bottom-menu.png');
+    background-position: center 10px;
+    background-size: 35px auto;
+}
+
+.menu--menu-principal---xingu- {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-item {
+    display: inherit;
+    padding: 4px 4px;
+}
+
+.nav-item a {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.nav-item a:hover {
+    background: #aa1a1a;
+    color: white !important;
+}

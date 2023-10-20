@@ -1,0 +1,91 @@
+<?php
+
+/**
+ * @file
+ * xinguBootstrap theme file.
+ */
+
+function xinguBootstrap_preprocess_paragraph__paragraph_banner(&$variables)
+{
+
+    // Obtenha o parágrafo relacionado ao campo.
+    $relatedParagraph = $variables['paragraph'];
+
+    // Verifique se há um campo de botão personalizado.
+    if ($relatedParagraph->hasField('field_botao')) {
+        $customButtonField = $relatedParagraph->get('field_botao');
+
+        if (isset($customButtonField[0])) {
+            // Obtenha informações do botão personalizado.
+            $buttonId = $customButtonField->getValue('list')[0]['target_id'];
+            $buttonParagraph = \Drupal\paragraphs\Entity\Paragraph::load($buttonId);
+            $buttonLink = $buttonParagraph->get('field_link')->getValue()[0]['uri'];
+            $buttonText = $buttonParagraph->get('field_title')->getValue()[0]['value'];
+            $buttonType = $buttonParagraph->get('field_modelo')->getValue()[0]['value'];
+
+            $variables['banner']['button'] = [
+                'text' => $buttonText,
+                'link' => $buttonLink,
+                'type' => $buttonType,
+            ];
+        }
+    }
+
+    // Obtenha informações da imagem de fundo.
+    $backgroundImageId = $relatedParagraph->get('field_background')->getValue()[0]['target_id'];
+    $backgroundImageTitle = $relatedParagraph->get('field_title')->getValue() ? $relatedParagraph->get('field_title')->getValue()[0]['value'] : '';
+    $backgroundImageFile = \Drupal\file\Entity\File::load($backgroundImageId);
+    $backgroundImageUrl = \Drupal::service('file_url_generator')->generateAbsoluteString($backgroundImageFile->getFileUri());
+
+    $variables['banner']['content'] = [
+        'title' => $backgroundImageTitle,
+        'image_url' => $backgroundImageUrl,
+    ];
+}
+
+
+function _xinguBootstrap_preprocess_block__views_block__banner_display_block_banner_display(&$variables)
+{
+    dd($variables);
+    $variables['custom_variable'] = 'Este é um valor personalizado para o template.';
+}
+
+/**
+ * Implement hook_preprocess_HOOK() for field templates.
+ */
+function _xinguBootstrap_preprocess_field__field_banner(&$variables)
+{
+    // Obtenha o parágrafo relacionado ao campo.
+    $relatedParagraph = $variables['items'][0]['content']['#paragraph'];
+
+    // Verifique se há um campo de botão personalizado.
+    if ($relatedParagraph->hasField('field_botao')) {
+        $customButtonField = $relatedParagraph->get('field_botao');
+
+        if (isset($customButtonField[0])) {
+            // Obtenha informações do botão personalizado.
+            $buttonId = $customButtonField->getValue('list')[0]['target_id'];
+            $buttonParagraph = \Drupal\paragraphs\Entity\Paragraph::load($buttonId);
+            $buttonLink = $buttonParagraph->get('field_link')->getValue()[0]['uri'];
+            $buttonText = $buttonParagraph->get('field_title')->getValue()[0]['value'];
+            $buttonType = $buttonParagraph->get('field_modelo')->getValue()[0]['value'];
+
+            $variables['banner']['button'] = [
+                'text' => $buttonText,
+                'link' => $buttonLink,
+                'type' => $buttonType,
+            ];
+        }
+    }
+
+    // Obtenha informações da imagem de fundo.
+    $backgroundImageId = $relatedParagraph->get('field_background')->getValue()[0]['target_id'];
+    $backgroundImageTitle = $relatedParagraph->get('field_title')->getValue() ? $relatedParagraph->get('field_title')->getValue()[0]['value'] : '';
+    $backgroundImageFile = \Drupal\file\Entity\File::load($backgroundImageId);
+    $backgroundImageUrl = \Drupal::service('file_url_generator')->generateAbsoluteString($backgroundImageFile->getFileUri());
+
+    $variables['banner']['content'] = [
+        'title' => $backgroundImageTitle,
+        'image_url' => $backgroundImageUrl,
+    ];
+}

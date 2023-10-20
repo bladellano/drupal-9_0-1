@@ -1,0 +1,12 @@
+uuid: 9d7e262b-5487-4fea-9ac9-a5a05a5df39a
+langcode: pt-br
+status: true
+dependencies:
+  content:
+    - 'file:file:5c9b5983-cc09-4041-95e3-b2eb248ff292'
+id: paragraph_banner
+label: 'Paragraph Banner'
+icon_uuid: 5c9b5983-cc09-4041-95e3-b2eb248ff292
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggZD0iTTExIDE5SDVhMiAyIDAgMCAxLTItMlY3YTIgMiAwIDAgMSAyLTJoMTRhMiAyIDAgMCAxIDIgMnY0Ii8+PHBhdGggZD0iTTE0IDE1YTEgMSAwIDAgMSAxLTFoNWExIDEgMCAwIDEgMSAxdjNhMSAxIDAgMCAxLTEgMWgtNWExIDEgMCAwIDEtMS0xeiIvPjwvZz48L3N2Zz4='
+description: 'Componente banner'
+behavior_plugins: {  }

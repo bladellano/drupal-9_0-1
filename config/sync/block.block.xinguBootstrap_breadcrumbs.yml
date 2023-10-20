@@ -1,0 +1,22 @@
+uuid: c613dc88-feac-4ad2-8b94-97d39bf9c9d6
+langcode: pt-br
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - xinguBootstrap
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: xinguBootstrap_breadcrumbs
+theme: xinguBootstrap
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

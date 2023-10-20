@@ -706,6 +706,10 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  * @see https://www.drupal.org/docs/installing-drupal/trusted-host-settings
  */
 
+ $settings['trusted_host_patterns'] = [
+  '^drupal.local\.com$',
+ ];
+
 /**
  * The default list of directories that will be ignored by Drupal's file API.
  *
@@ -810,9 +814,11 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
+
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
+}
+
 $databases['default']['default'] = array (
   'database' => 'drupal-9_0-1',
   'username' => 'root',
