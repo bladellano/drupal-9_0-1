@@ -63,4 +63,11 @@ Copy path 'files' for new clone project.
 * Drupal Console (PECE);
 * Web profiler (Very utility);
 * Devel Php;
+* Place Block;
+* Settings Tray
+* Panelizer
+* Panelizer Quick Edit
+* Title_field_for_manage_display
+* Views_argument_token
+* Field_group
 ```
