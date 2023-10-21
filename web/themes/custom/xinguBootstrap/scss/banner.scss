@@ -1,0 +1,31 @@
+#banner-xingu {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+#banner-xingu h2 {
+    color: yellow;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 14px 4px 4px #222;
+}
+
+#banner-xingu .default {
+    background-color: #921e20;
+    border-color: #921e20;
+    color: #fff;
+    padding: 8px 26px;
+    text-transform: uppercase;
+}
+
+#banner-xingu .default:hover {
+    background-color: #b42c2e;
+    border-color: #b42c2e;
+    color: #fff;
+}

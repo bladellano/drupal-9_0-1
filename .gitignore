@@ -36,3 +36,6 @@ settings.json
 /web/robots.txt
 /web/update.php
 /web/web.config
+
+# Ignore files node_modules
+/web/themes/custom/**/node_modules

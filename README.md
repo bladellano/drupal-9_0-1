@@ -41,6 +41,18 @@ Copy path 'files' for new clone project.
 'drush cr' next step.
 
 ```
+
+## Livereload (Scss, JS e Twig)
+
+```bash
+cd web/themes/custom/xinguBootstrap
+gulp watch
+
+# Starting 'watch'...
+# [22:04:28] Starting 'compileSass'...
+
+```
+
 ## Tip: most used modules
 
 ```bash
