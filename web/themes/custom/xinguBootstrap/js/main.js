@@ -1,1 +1,1 @@
-console.log("Running Drupal...");
+!function(e){e(function(){setTimeout(function(){e(".loader_bg").fadeToggle()},3e3)})}(jQuery);
