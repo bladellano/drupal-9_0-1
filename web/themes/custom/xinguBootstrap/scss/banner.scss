@@ -1,3 +1,5 @@
+@import 'variables_theme';
+
 #banner-xingu {
     height: 60vh;
     width: 100%;
@@ -10,22 +12,22 @@
 }
 
 #banner-xingu h2 {
-    color: yellow;
+    color: #fff;
     font-weight: bold;
     text-transform: uppercase;
-    text-shadow: 14px 4px 4px #222;
+    text-shadow: 4px 4px 4px #2226;
 }
 
 #banner-xingu .default {
-    background-color: #921e20;
-    border-color: #921e20;
+    background-color: $default-color;
+    border-color: $default-color;
     color: #fff;
     padding: 8px 26px;
     text-transform: uppercase;
 }
 
 #banner-xingu .default:hover {
-    background-color: #b42c2e;
-    border-color: #b42c2e;
+    background-color: $default-color-hover;
+    border-color: $default-color-hover;
     color: #fff;
 }

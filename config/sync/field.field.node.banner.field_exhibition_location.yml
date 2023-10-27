@@ -1,0 +1,23 @@
+uuid: cea7120e-1c72-4c7f-9b96-41ef858f1734
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exhibition_location
+    - node.type.banner
+  module:
+    - options
+id: node.banner.field_exhibition_location
+field_name: field_exhibition_location
+entity_type: node
+bundle: banner
+label: 'Local de Exibição'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: page
+default_value_callback: ''
+settings: {  }
+field_type: list_string

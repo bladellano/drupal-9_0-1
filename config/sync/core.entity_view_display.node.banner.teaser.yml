@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.banner.field_banner
     - field.field.node.banner.field_display_title
+    - field.field.node.banner.field_exhibition_location
     - node.type.banner
   module:
     - user
@@ -22,4 +23,5 @@ content:
 hidden:
   field_banner: true
   field_display_title: true
+  field_exhibition_location: true
   langcode: true

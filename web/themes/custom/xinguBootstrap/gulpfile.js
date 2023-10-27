@@ -10,7 +10,7 @@ const autoprefixer = require('gulp-autoprefixer');
 // Specify the Source files
 const SRC_JS        = './lib/*.js';
 const SRC_TWIG      = './**/**/*.twig';
-const SRC_SCSS      = './scss/style.scss'; //?! './scss/*.scss' Toda a pasta.
+const SRC_SCSS      = './scss/*.scss'; //?! './scss/*.scss' Toda a pasta.
 const DEST_JS       = './js';
 const DEST_CSS      = './css';
 
@@ -34,7 +34,7 @@ gulp.task('uglify', function () {
 function compileSass() {
     return gulp.src(SRC_SCSS)
         .pipe(sass()) // Compila o SCSS para CSS
-        .pipe(concat('style.css')) // Junta todos os arquivos compilados em style.css
+        // .pipe(concat('style.css')) // Junta todos os arquivos compilados em style.css
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
         .pipe(gulp.dest(DEST_CSS))
         .pipe(livereload()); // Ativa o livereload após a compilação

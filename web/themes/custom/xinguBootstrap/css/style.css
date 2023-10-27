@@ -110,15 +110,15 @@ footer {
 }
 
 #banner-xingu h2 {
-  color: yellow;
+  color: #fff;
   font-weight: bold;
   text-transform: uppercase;
-  text-shadow: 14px 4px 4px #222;
+  text-shadow: 4px 4px 4px rgba(34, 34, 34, 0.4);
 }
 
 #banner-xingu .default {
-  background-color: #921e20;
-  border-color: #921e20;
+  background-color: #921f2f;
+  border-color: #921f2f;
   color: #fff;
   padding: 8px 26px;
   text-transform: uppercase;

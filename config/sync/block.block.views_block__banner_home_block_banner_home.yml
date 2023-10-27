@@ -1,0 +1,49 @@
+uuid: 693089bd-6d13-4065-853a-96570e52e6e7
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.banner_home
+  module:
+    - context
+    - system
+    - views
+  theme:
+    - xinguBootstrap
+id: views_block__banner_home_block_banner_home
+theme: xinguBootstrap
+region: nav_main
+weight: 0
+provider: null
+plugin: 'views_block:banner_home-block_banner_home'
+settings:
+  id: 'views_block:banner_home-block_banner_home'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context:
+    id: context
+    negate: null
+    values: ''
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

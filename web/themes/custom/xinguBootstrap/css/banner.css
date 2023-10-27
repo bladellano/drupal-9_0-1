@@ -1,0 +1,37 @@
+#banner-xingu {
+  height: 60vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+#banner-xingu h2 {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 4px rgba(34, 34, 34, 0.4);
+}
+
+#banner-xingu .default {
+  background-color: #921f2f;
+  border-color: #921f2f;
+  color: #fff;
+  padding: 8px 26px;
+  text-transform: uppercase;
+}
+
+#banner-xingu .default:hover {
+  background-color: #b42c2e;
+  border-color: #b42c2e;
+  color: #fff;
+}
