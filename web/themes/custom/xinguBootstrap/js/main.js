@@ -1,1 +1,1 @@
-!function(e){e(function(){setTimeout(function(){e(".loader_bg").fadeToggle()},500)})}(jQuery);
+!function(e){e(function(){setTimeout(function(){e(".loader_bg").fadeToggle()},2e3)})}(jQuery);
