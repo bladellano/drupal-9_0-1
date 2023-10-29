@@ -3,6 +3,7 @@ langcode: pt-br
 status: true
 dependencies:
   config:
+    - system.menu.menu-principal---xingu-
     - views.view.banner_display
   module:
     - node
@@ -59,6 +60,24 @@ reactions:
         context_mapping: {  }
         views_label: ''
         items_per_page: none
+        third_party_settings: {  }
+      2d45b192-c11b-416c-9e44-a88e2f92bb40:
+        uuid: 2d45b192-c11b-416c-9e44-a88e2f92bb40
+        id: 'system_menu_block:menu-principal---xingu-'
+        label: 'Menu Principal - Xingu+'
+        provider: system
+        label_display: '0'
+        region: nav_main
+        weight: '-10'
+        custom_id: system_menu_block_menu_principal_xingu_
+        theme: xinguBootstrap
+        css_class: ''
+        unique: 0
+        context_id: basic_pages_with_banner
+        context_mapping: {  }
+        level: '1'
+        depth: '0'
+        expand_all_items: 0
         third_party_settings: {  }
     include_default_blocks: 0
     saved: false

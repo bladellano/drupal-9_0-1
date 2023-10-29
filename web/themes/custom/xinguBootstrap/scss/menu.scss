@@ -1,4 +1,7 @@
 /* Estilos para o menu de navegação Bootstrap 5 */
+
+@import 'variables_theme';
+
 .navbar {
     background-color: #fff;
 }
@@ -59,6 +62,6 @@
 }
 
 .nav-item a:hover {
-    background: #aa1a1a;
+    background: $default-color;
     color: white !important;
 }

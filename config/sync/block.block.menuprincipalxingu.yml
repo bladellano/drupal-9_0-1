@@ -1,0 +1,45 @@
+uuid: b08c72f3-ed24-42a3-9567-b5847eb95149
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.menu-principal---xingu-
+  module:
+    - context
+    - system
+  theme:
+    - xinguBootstrap
+id: menuprincipalxingu
+theme: xinguBootstrap
+region: nav_main
+weight: -9
+provider: null
+plugin: 'system_menu_block:menu-principal---xingu-'
+settings:
+  id: 'system_menu_block:menu-principal---xingu-'
+  label: 'Menu Principal - Xingu+'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context:
+    id: context
+    negate: null
+    values: ''

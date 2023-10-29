@@ -13,7 +13,7 @@ _core:
 id: xinguBootstrap_main_menu
 theme: xinguBootstrap
 region: header
-weight: 0
+weight: 4
 provider: null
 plugin: 'system_menu_block:main'
 settings:

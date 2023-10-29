@@ -12,8 +12,8 @@ dependencies:
     - xinguBootstrap
 id: views_block__banner_home_block_banner_home
 theme: xinguBootstrap
-region: nav_main
-weight: 0
+region: breadcrumb
+weight: -8
 provider: null
 plugin: 'views_block:banner_home-block_banner_home'
 settings:

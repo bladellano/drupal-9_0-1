@@ -24,9 +24,10 @@ bundle: article
 mode: default
 content:
   body:
-    type: text_default
+    type: text_trimmed
     label: hidden
-    settings: {  }
+    settings:
+      trim_length: 300
     third_party_settings: {  }
     weight: 0
     region: content
