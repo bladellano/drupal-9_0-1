@@ -1,5 +1,6 @@
 @import 'variables_theme';
 
+
 #banner-xingu {
     height: 60vh;
     width: 100%;
@@ -9,6 +10,14 @@
     text-align: center;
     background-size: cover !important;
     background-repeat: no-repeat !important;
+}
+
+.page-banner-bottom {
+    width: 100%;
+    height: 15px;
+    background: url('../images/bg-bottom-menu.png');
+    background-size: 35px auto;
+    margin-bottom: 6px;
 }
 
 #banner-xingu h2 {

@@ -65,7 +65,7 @@
 }
 
 .nav-item a:hover {
-  background: #aa1a1a;
+  background: #921f2f;
   color: white !important;
 }
 
@@ -74,6 +74,20 @@ footer {
   background-color: bisque;
 }
 
+/** Centralizando conteudo, como se fosse no Xingu. */
+#block-mainpagecontent,
+.node.node--type-page.node--view-mode-full {
+  width: 100%;
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/** Custom para exibicao do Loading */
 .loader_bg {
   position: fixed;
   background-color: #fff;
@@ -107,6 +121,14 @@ footer {
   text-align: center;
   background-size: cover !important;
   background-repeat: no-repeat !important;
+}
+
+.page-banner-bottom {
+  width: 100%;
+  height: 15px;
+  background: url("../images/bg-bottom-menu.png");
+  background-size: 35px auto;
+  margin-bottom: 6px;
 }
 
 #banner-xingu h2 {
