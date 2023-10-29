@@ -1,3 +1,17 @@
+/** Centralizando conteudo, como se fosse no Xingu. */
+#block-mainpagecontent,
+.node.node--type-page.node--view-mode-full {
+  width: 100%;
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/** Custom para exibicao do Loading */
 .loader_bg {
   position: fixed;
   background-color: #fff;
