@@ -1,72 +1,42 @@
 @charset "UTF-8";
 /* Estilos para o menu de navegação Bootstrap 5 */
-.navbar {
-  background-color: #fff;
+ul#superfish-menu-principal-xingu- ul {
+  background-color: #e8e8e8;
+  border-radius: 0 0 10px 10px;
+}
+ul#superfish-menu-principal-xingu- li a,
+ul#superfish-menu-principal-xingu- li span {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 13px;
+  text-decoration: none;
+}
+ul#superfish-menu-principal-xingu- li a:hover,
+ul#superfish-menu-principal-xingu- li span:hover {
+  background-color: #921f2f;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-.navbar-brand {
-  color: #f0f0f0;
-  font-size: 24px;
-}
-
-.navbar-toggler-icon {
-  background-color: #fff;
-}
-
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.nav-item.dropdown .dropdown-menu a {
-  color: #333;
-}
-
-.nav-item.dropdown .dropdown-menu {
-  background-color: #fff;
-}
-
-/* Custom menu... */
-.nav {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: url("../images/bg-menu.gif");
-  background-size: 170px auto;
-  background-position: center 55px;
-}
-
-.menu--menu-principal---xingu-::after {
+.navbar::after {
   content: "";
   display: block;
   height: 15px;
   background: url("../images/bg-bottom-menu.png");
   background-position: center 10px;
   background-size: 35px auto;
-}
-
-.menu--menu-principal---xingu- {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
   width: 100%;
 }
 
-.nav-item {
-  display: inherit;
-  padding: 4px 4px;
-}
-
-.nav-item a {
-  text-transform: uppercase;
-  font-size: 0.8rem;
-}
-
-.nav-item a:hover {
-  background: #921f2f;
-  color: white !important;
+.navbar {
+  position: relative;
+  background: url("../images/bg-menu.gif");
+  background-size: 170px auto;
+  background-position: center 55px;
 }
 
 footer {
@@ -142,7 +112,7 @@ footer {
 }
 
 #banner-xingu {
-  height: 60vh;
+  height: 40vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,6 +125,7 @@ footer {
           align-items: center;
   text-align: center;
   background-size: cover !important;
+  background-position: center center !important;
   background-repeat: no-repeat !important;
 }
 

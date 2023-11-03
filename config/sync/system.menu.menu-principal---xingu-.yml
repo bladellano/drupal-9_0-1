@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: menu-principal---xingu-
 label: 'Menu Principal - Xingu+'
-description: ''
+description: 'Menu principal do site Xingu +'
 locked: false

@@ -28,6 +28,7 @@
         "drupal/field_group": "^3.4",
         "drupal/paragraphs": "^1.16",
         "drupal/pathauto": "^1.12",
+        "drupal/superfish": "^1.7",
         "drupal/title_field_for_manage_display": "^2.1",
         "drupal/views_argument_token": "^2.0"
     },

@@ -2,66 +2,49 @@
 
 @import 'variables_theme';
 
-.navbar {
-    background-color: #fff;
+ul#superfish-menu-principal-xingu- {
+
+    ul {
+        background-color: #e8e8e8;
+        border-radius: 0 0 10px 10px;
+
+    }
+
+    li {
+
+        a,
+        span {
+            text-transform: uppercase;
+            color: #000;
+            font-size: 13px;
+            text-decoration: none;
+
+            &:hover {
+                background-color: $default-color;
+                color: #fff;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
 }
 
-.navbar-brand {
-    color: #f0f0f0;
-    font-size: 24px;
-}
-
-.navbar-toggler-icon {
-    background-color: #fff;
-}
-
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.nav-item.dropdown .dropdown-menu a {
-    color: #333;
-}
-
-.nav-item.dropdown .dropdown-menu {
-    background-color: #fff;
-}
-
-/* Custom menu... */
-.nav {
-    flex-direction: row;
-    justify-content: center;
-    background: url('../images/bg-menu.gif');
-    background-size: 170px auto;
-    background-position: center 55px;
-}
-
-.menu--menu-principal---xingu-::after {
+.navbar::after {
     content: '';
     display: block;
     height: 15px;
     background: url('../images/bg-bottom-menu.png');
     background-position: center 10px;
     background-size: 35px auto;
-}
-
-.menu--menu-principal---xingu- {
-    position: fixed;
-    top: 0;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
     width: 100%;
 }
 
-.nav-item {
-    display: inherit;
-    padding: 4px 4px;
-}
-
-.nav-item a {
-    text-transform: uppercase;
-    font-size: 0.8rem;
-}
-
-.nav-item a:hover {
-    background: $default-color;
-    color: white !important;
+.navbar {
+    position: relative;
+    background: url('../images/bg-menu.gif');
+    background-size: 170px auto;
+    background-position: center 55px;
 }

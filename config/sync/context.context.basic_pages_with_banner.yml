@@ -8,6 +8,7 @@ dependencies:
     - views.view.keywords
   module:
     - node
+    - superfish
     - system
     - views
 label: 'Paginas Basicas com Banner'
@@ -62,24 +63,6 @@ reactions:
         views_label: ''
         items_per_page: none
         third_party_settings: {  }
-      2d45b192-c11b-416c-9e44-a88e2f92bb40:
-        uuid: 2d45b192-c11b-416c-9e44-a88e2f92bb40
-        id: 'system_menu_block:menu-principal---xingu-'
-        label: 'Menu Principal - Xingu+'
-        provider: system
-        label_display: '0'
-        region: nav_main
-        weight: '-10'
-        custom_id: system_menu_block_menu_principal_xingu_
-        theme: xinguBootstrap
-        css_class: ''
-        unique: 0
-        context_id: basic_pages_with_banner
-        context_mapping: {  }
-        level: '1'
-        depth: '0'
-        expand_all_items: 0
-        third_party_settings: {  }
       1ccc800e-22ee-4926-900d-f8ccf50addf5:
         uuid: 1ccc800e-22ee-4926-900d-f8ccf50addf5
         id: 'views_block:keywords-block_keywords'
@@ -96,6 +79,70 @@ reactions:
         context_mapping: {  }
         views_label: ''
         items_per_page: none
+        third_party_settings: {  }
+      43dbdd9f-f64b-454d-81f8-77f019b0afe0:
+        uuid: 43dbdd9f-f64b-454d-81f8-77f019b0afe0
+        id: 'superfish:menu-principal---xingu-'
+        label: 'Menu Principal - Xingu+'
+        provider: superfish
+        label_display: '0'
+        region: nav_main
+        weight: '0'
+        custom_id: superfish_menu_principal_xingu_
+        theme: xinguBootstrap
+        css_class: ''
+        unique: 0
+        context_id: basic_pages_with_banner
+        context_mapping: {  }
+        level: 1
+        depth: 0
+        expand_all_items: false
+        menu_type: horizontal
+        style: none
+        arrow: 1
+        shadow: 0
+        speed: fast
+        delay: 800
+        slide: none
+        supposition: 1
+        hoverintent: 1
+        touch: 0
+        touchbh: 2
+        touchbp: 768
+        touchua: 0
+        touchual: ''
+        touchuam: 0
+        small: 2
+        smallbp: 768
+        smallua: 0
+        smallual: ''
+        smalluam: 0
+        smallact: 1
+        smallset: ''
+        smallasa: 0
+        smallcmc: 0
+        smallecm: ''
+        smallchc: 0
+        smallech: ''
+        smallicm: ''
+        smallich: ''
+        smallamt: ''
+        smallabt: 1
+        supersubs: 1
+        minwidth: 12
+        maxwidth: 27
+        multicolumn: 0
+        multicolumn_depth: 1
+        multicolumn_levels: 1
+        pathlevels: 1
+        expanded: 1
+        clone_parent: 0
+        hide_linkdescription: 0
+        add_linkdescription: 0
+        link_depth_class: 1
+        custom_list_class: ''
+        custom_item_class: ''
+        custom_link_class: ''
         third_party_settings: {  }
     include_default_blocks: 0
     saved: false
