@@ -11,6 +11,7 @@ module:
   ckeditor5: 0
   comment: 0
   config: 0
+  config_partial_export: 0
   contact: 0
   context: 0
   context_ui: 0

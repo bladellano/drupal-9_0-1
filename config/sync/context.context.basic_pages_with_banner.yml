@@ -5,6 +5,7 @@ dependencies:
   config:
     - system.menu.menu-principal---xingu-
     - views.view.banner_display
+    - views.view.keywords
   module:
     - node
     - system
@@ -78,6 +79,23 @@ reactions:
         level: '1'
         depth: '0'
         expand_all_items: 0
+        third_party_settings: {  }
+      1ccc800e-22ee-4926-900d-f8ccf50addf5:
+        uuid: 1ccc800e-22ee-4926-900d-f8ccf50addf5
+        id: 'views_block:keywords-block_keywords'
+        label: ''
+        provider: views
+        label_display: visible
+        region: footer
+        weight: '0'
+        custom_id: views_block_keywords_block_keywords
+        theme: xinguBootstrap
+        css_class: ''
+        unique: 0
+        context_id: basic_pages_with_banner
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
         third_party_settings: {  }
     include_default_blocks: 0
     saved: false
