@@ -82,4 +82,5 @@ gulp watch
 * Title_field_for_manage_display
 * Views_argument_token
 * Field_group
+* Superfish
 ```
