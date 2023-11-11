@@ -39,7 +39,9 @@
 /** Centralizando conteudo, como se fosse no Xingu. */
 #block-mainpagecontent,
 .views-element-container.block.block-views.block-views-blockkeywords-block-keywords,
-.node.node--type-page.node--view-mode-full {
+.node.node--type-page.node--view-mode-full,
+#search-block-form
+{
     width: 100%;
     max-width: 1140px;
     margin-right: auto;
@@ -60,4 +62,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 999;
 }

@@ -1,0 +1,30 @@
+#search-block-form,
+#search-form {
+    flex-direction: column !important;
+
+    input,
+    .form-item-keys {
+        background-color: #fff !important;
+        width: 100% !important;
+
+    }
+
+    input {
+        border-radius: 0%;
+        color: #333 !important;
+        height: 50px;
+    }
+
+    .icon {
+        left: inherit !important;
+
+        i.better_search {
+            transform: scaleX(-1);
+            height: 50px;
+        }
+    }
+}
+
+.search-block-form {
+    background-color: beige;
+}

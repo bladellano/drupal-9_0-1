@@ -39,3 +39,6 @@ settings.json
 
 # Ignore files node_modules
 /web/themes/custom/**/node_modules
+
+# Ignore files css of theme
+/web/themes/custom/xinguBootstrap/*/*.css
