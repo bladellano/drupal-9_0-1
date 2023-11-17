@@ -1,0 +1,79 @@
+uuid: 87355d9d-9e2b-4b59-9382-c14c12faa9b3
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_tags
+    - search_api.server.default_server
+  module:
+    - node
+    - user
+    - taxonomy
+    - search_api
+id: article_index
+name: 'Article Index'
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Corpo
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  description:
+    label: 'Tags » Termo de taxonomia » Descrição'
+    datasource_id: 'entity:node'
+    property_path: 'field_tags:entity:description'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+      module:
+        - taxonomy
+  name:
+    label: 'Escrito por » Usuário » Nome'
+    datasource_id: 'entity:node'
+    property_path: 'uid:entity:name'
+    type: string
+    boost: !!float 5
+    dependencies:
+      module:
+        - node
+        - user
+  title:
+    label: Título
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    boost: !!float 5
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - article
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: default_server
