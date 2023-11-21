@@ -15,7 +15,7 @@ label: 'Paginas Basicas com Banner'
 name: basic_pages_with_banner
 group: null
 description: 'Nesse contexto sera exibido paginas basicas com banner no topo'
-requireAllConditions: false
+requireAllConditions: true
 disabled: false
 conditions:
   'entity_bundle:node':
@@ -26,6 +26,12 @@ conditions:
       node: '@node.node_route_context:node'
     bundles:
       page: page
+  context_all:
+    id: context_all
+    negate: null
+    uuid: 8e3e686c-7d5f-430e-82c7-6043ed3313dd
+    context_mapping: {  }
+    values: ~search_page_with_banner
 reactions:
   blocks:
     id: blocks

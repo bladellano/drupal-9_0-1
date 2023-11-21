@@ -1,0 +1,146 @@
+uuid: 9da3df61-5f6d-4548-9d24-2fc10ebfb684
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.menu-principal---xingu-
+    - views.view.banner_display
+    - views.view.block_search_articles
+  module:
+    - superfish
+    - system
+    - views
+label: 'Página de busca com banner.'
+name: search_page_with_banner
+group: null
+description: 'Hamburger fatback shoulder pork belly cow. Chislic frankfurter burgdoggen'
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    uuid: 92894015-7195-4b9b-928e-027b480e73c2
+    context_mapping: {  }
+    pages: /busca
+reactions:
+  blocks:
+    id: blocks
+    uuid: 484ad638-93e4-4be4-92f0-f40eb81ecd8c
+    blocks:
+      98431d4d-4683-4d31-9830-53798db82cfb:
+        uuid: 98431d4d-4683-4d31-9830-53798db82cfb
+        id: system_breadcrumb_block
+        label: Breadcrumbs
+        provider: system
+        label_display: visible
+        region: breadcrumb
+        weight: '0'
+        custom_id: system_breadcrumb_block
+        theme: xinguBootstrap
+        css_class: ''
+        unique: 0
+        context_id: search_page_with_banner
+        context_mapping: {  }
+        third_party_settings: {  }
+      9769b186-8c3f-4b13-9819-b00de79ae8b4:
+        uuid: 9769b186-8c3f-4b13-9819-b00de79ae8b4
+        id: 'views_block:block_search_articles-block_search_articles'
+        label: ''
+        provider: views
+        label_display: '0'
+        region: content
+        weight: '0'
+        custom_id: views_block_block_search_articles_block_search_articles
+        theme: xinguBootstrap
+        css_class: ''
+        unique: 0
+        context_id: search_page_with_banner
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+      846598af-3bd1-4004-b4ba-240a228accc2:
+        uuid: 846598af-3bd1-4004-b4ba-240a228accc2
+        id: 'superfish:menu-principal---xingu-'
+        label: 'Menu Principal - Xingu+'
+        provider: superfish
+        label_display: '0'
+        region: nav_main
+        weight: '0'
+        custom_id: superfish_menu_principal_xingu_
+        theme: xinguBootstrap
+        css_class: ''
+        unique: 0
+        context_id: search_page_with_banner
+        context_mapping: {  }
+        level: 1
+        depth: 0
+        expand_all_items: false
+        menu_type: horizontal
+        style: none
+        arrow: 1
+        shadow: 0
+        speed: fast
+        delay: 800
+        slide: vertical
+        supposition: 1
+        hoverintent: 1
+        touch: 0
+        touchbh: 2
+        touchbp: 768
+        touchua: 0
+        touchual: ''
+        touchuam: 0
+        small: 2
+        smallbp: 768
+        smallua: 0
+        smallual: ''
+        smalluam: 0
+        smallact: 1
+        smallset: ''
+        smallasa: 0
+        smallcmc: 0
+        smallecm: ''
+        smallchc: 0
+        smallech: ''
+        smallicm: ''
+        smallich: ''
+        smallamt: ''
+        smallabt: 1
+        supersubs: 1
+        minwidth: 12
+        maxwidth: 27
+        multicolumn: 0
+        multicolumn_depth: 1
+        multicolumn_levels: 1
+        pathlevels: 1
+        expanded: 0
+        clone_parent: 0
+        hide_linkdescription: 0
+        add_linkdescription: 0
+        link_depth_class: 1
+        custom_list_class: ''
+        custom_item_class: ''
+        custom_link_class: ''
+        third_party_settings: {  }
+      c27fd93a-4301-477d-8eea-742c286710a4:
+        uuid: c27fd93a-4301-477d-8eea-742c286710a4
+        id: 'views_block:banner_display-block_banner_display'
+        label: ''
+        provider: views
+        label_display: '0'
+        region: breadcrumb
+        weight: '-1'
+        custom_id: views_block_banner_display_block_banner_display
+        theme: xinguBootstrap
+        css_class: ''
+        unique: 0
+        context_id: search_page_with_banner
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+    include_default_blocks: 0
+    saved: false
+weight: 0

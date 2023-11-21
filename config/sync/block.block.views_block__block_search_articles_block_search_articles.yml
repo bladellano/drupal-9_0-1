@@ -1,0 +1,49 @@
+uuid: d58c9d5e-c0b2-4775-a6ca-15337e43b999
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.block_search_articles
+  module:
+    - context
+    - system
+    - views
+  theme:
+    - xinguBootstrap
+id: views_block__block_search_articles_block_search_articles
+theme: xinguBootstrap
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:block_search_articles-block_search_articles'
+settings:
+  id: 'views_block:block_search_articles-block_search_articles'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context:
+    id: context
+    negate: null
+    values: ''
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
