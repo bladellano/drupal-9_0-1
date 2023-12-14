@@ -1,0 +1,44 @@
+uuid: 44b1f624-3fa3-4a08-8b06-d0d5a200fcdc
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.carousel_xingu
+  module:
+    - context
+    - views
+  theme:
+    - xinguBootstrap
+id: views_block__carousel_xingu_block_carousel_xingu
+theme: xinguBootstrap
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:carousel_xingu-block_carousel_xingu'
+settings:
+  id: 'views_block:carousel_xingu-block_carousel_xingu'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context:
+    id: context
+    negate: null
+    values: ''

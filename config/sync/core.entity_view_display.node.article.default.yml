@@ -3,7 +3,6 @@ langcode: pt-br
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment.default
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_display_title
@@ -12,7 +11,6 @@ dependencies:
     - image.style.wide
     - node.type.article
   module:
-    - comment
     - image
     - text
     - user
@@ -29,16 +27,7 @@ content:
     settings:
       trim_length: 300
     third_party_settings: {  }
-    weight: 0
-    region: content
-  comment:
-    type: comment_default
-    label: above
-    settings:
-      view_mode: default
-      pager_id: 0
-    third_party_settings: {  }
-    weight: 110
+    weight: 1
     region: content
   field_image:
     type: image
@@ -49,7 +38,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: -1
+    weight: 0
     region: content
   field_tags:
     type: entity_reference_label
@@ -57,13 +46,11 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 10
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 2
     region: content
 hidden:
+  comment: true
   field_display_title: true
   langcode: true
+  links: true
+  search_api_excerpt: true

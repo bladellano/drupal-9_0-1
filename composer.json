@@ -28,6 +28,7 @@
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/field_group": "^3.4",
         "drupal/flood_control": "^2.3",
+        "drupal/owlcarousel": "^1.0@beta",
         "drupal/paragraphs": "^1.16",
         "drupal/pathauto": "^1.12",
         "drupal/search_api": "^1.30",
