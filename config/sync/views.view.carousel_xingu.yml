@@ -7,7 +7,7 @@ dependencies:
     - node.type.article
   module:
     - node
-    - owlcarousel
+    - tiny_slider
     - user
 id: carousel_xingu
 label: 'Carousel Xingu'
@@ -156,35 +156,33 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: owlcarousel
+        type: tiny_slider
         options:
           row_class: ''
           default_row_class: true
           uses_fields: false
           items: '3'
-          itemsDesktop: '[1199,4]'
-          itemsDesktopSmall: '[979,3]'
-          itemsTablet: '[768,2]'
-          itemsMobile: '[479,1]'
-          singleItem: 0
-          itemsScaleUp: 0
-          slideSpeed: '200'
-          paginationSpeed: '800'
-          rewindSpeed: '1000'
-          autoPlay: 0
-          stopOnHover: 0
-          navigation: 0
-          prevText: antes
-          nextText: próximo
-          rewindNav: 1
-          scrollPerPage: 0
-          pagination: 1
-          paginationNumbers: 0
-          responsive: 1
-          responsiveRefreshRate: '200'
+          margin: '0'
+          nav: 1
+          navPosition: top
+          autoplay: 0
+          autoplayHoverPause: 0
+          autoplayButtonOutput: 0
+          autoplayPosition: top
+          autoplayTextStart: start
+          autoplayTextStop: stop
+          controls: 0
+          controlsPosition: top
+          controlsTextPrev: prev
+          controlsTextNext: next
+          arrowKeys: 0
           mouseDrag: 1
-          touchDrag: 1
-          transitionStyle: fade
+          loop: 1
+          speed: '300'
+          dimensionMobile: ''
+          itemsMobile: ''
+          dimensionDesktop: ''
+          itemsDesktop: ''
       row:
         type: 'entity:node'
         options:

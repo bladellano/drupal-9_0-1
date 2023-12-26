@@ -33,6 +33,7 @@
         "drupal/pathauto": "^1.12",
         "drupal/search_api": "^1.30",
         "drupal/superfish": "^1.7",
+        "drupal/tiny_slider": "^1.1@RC",
         "drupal/title_field_for_manage_display": "^2.1",
         "drupal/views_argument_token": "^2.0"
     },
