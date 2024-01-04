@@ -1,0 +1,55 @@
+{# 
+  Template: Flickity Carousel
+  Dependencies: 'flickity/local', 'flickity/settings' libraries
+#}
+
+{{ attach_library('flickity/local') }}
+{{ attach_library('flickity/settings') }}
+
+{# 
+  Flickity Carousel Container
+  Usage: 
+  - Include this template in your Drupal theme or custom module.
+  - Provide an array of items to be displayed in the carousel.
+#}
+<div id="{{ id }}">
+  <div class="carousel">
+  
+    {# Carousel Indicators (visible only on medium and larger screens) #}
+    <ol class="carousel-indicators d-none d-md-flex">
+      {% for key, item in items %}
+        <li class="button" style="background-image: url('{{ item.image }}')" data-id="{{ key }}">
+          <span>{{ item.title }}</span>
+        </li>
+      {% endfor %}
+    </ol>
+
+    {# Carousel Inner Content #}
+    <div class="carousel-inner">
+    
+      {# Default Group of Carousel Items #}
+      <div class="default_group">
+        {% for key, item in items %}
+          <div class="gallery-cell item-{{ key }}">
+          
+            {# Image for Carousel Item #}
+            <img loading="lazy" src="{{ item.image }}" width="1920" alt="{{ item.title }}" class="img-fluid" />
+            
+            {# Carousel Caption #}
+            <div class="carousel-caption">
+              <h3>
+                <p class='tags'>{{ item.tag }}</p>
+              </h3>
+              <h2>
+                <a href='{{ item.url }}' hreflang='pt-br'>{{ item.title }}</a>
+              </h2>
+            </div>
+            
+          </div>
+        {% endfor %}
+      </div> {# ./default_group #}
+      
+    </div> {# ./carousel-inner #}
+
+  </div> {# ./carousel #}
+</div>

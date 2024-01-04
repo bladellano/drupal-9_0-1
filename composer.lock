@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "991ae68e268c696549755a007cb4b72c",
+    "content-hash": "59eafa1281fc5139cc8473ac18d0f30e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1867,6 +1867,56 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/field_group",
                 "issues": "https://www.drupal.org/project/issues/field_group"
+            }
+        },
+        {
+            "name": "drupal/flickity",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/flickity.git",
+                "reference": "3.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/flickity-3.0.2.zip",
+                "reference": "3.0.2",
+                "shasum": "59c09afb5e968da137e829b7f70ab6087415fb9f"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.2",
+                    "datestamp": "1677874281",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Nicholas James (swim)",
+                    "homepage": "https://www.drupal.org/u/swim",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "swim",
+                    "homepage": "https://www.drupal.org/user/1968266"
+                }
+            ],
+            "description": "Provides Flickity library integration with Drupal.",
+            "homepage": "https://drupal.org/project/flickity",
+            "support": {
+                "source": "https://git.drupalcode.org/project/flickity",
+                "issues": "https://drupal.org/project/issues/flickity"
             }
         },
         {

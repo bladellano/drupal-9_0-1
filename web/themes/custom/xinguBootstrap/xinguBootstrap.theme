@@ -5,6 +5,39 @@
  * xinguBootstrap theme file.
  */
 
+
+ /**
+  * Preprocessa as Views do Flickity.
+  *
+  * Essa função preprocessa as Views do Flickity carregando os nós e termos associados a cada linha na view. 
+  * Em seguida, constrói um array de itens com o título, URL, tag e imagem para cada nó. 
+  * Por fim, atribui o ID e o array de itens à variável $vars.
+  *
+  * @param array $vars O array de variáveis passado por referência.
+  * @throws Exception Se houver um erro ao carregar os nós ou termos.
+  * @return void
+  */
+function xinguBootstrap_preprocess_flickity_views(&$vars)
+{
+    $aItems = [];
+
+    foreach ($vars["rows"] as $row) {
+        $node = \Drupal\node\Entity\Node::load($row['#row']->nid);
+        $term = \Drupal\taxonomy\Entity\Term::load($node->field_tags->target_id);
+        $fileUri = $node->get("field_image")->entity->getFileUri();
+
+        $aItems[] = [
+            "title" => $node->getTitle(),
+            "url" => $node->toUrl()->toString(),
+            "tag" => $term->getName(),
+            "image" => file_create_url($fileUri)
+        ];
+    }
+
+    $vars["id"] = $vars['view']->current_display;
+    $vars["items"] = $aItems;
+}
+
 function xinguBootstrap_preprocess_paragraph__paragraph_banner(&$variables)
 {
 
