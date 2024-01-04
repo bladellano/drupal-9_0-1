@@ -1,1 +1,1 @@
-!function(e){e(function(){setTimeout(function(){e(".loader_bg").fadeToggle()},2e3)})}(jQuery);
+!function(o){o(function(){setTimeout(function(){o(".loader_bg").fadeToggle()},2e3);const t=o(".default_group");t.flickity(),o("#block_publicacoes .carousel-indicators").on("click",".button",function(){const e=o(this).index();t.flickity("select",e)})})}(jQuery);

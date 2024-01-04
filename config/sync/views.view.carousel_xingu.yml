@@ -4,8 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.storage.node.field_image
+    - field.storage.node.field_tags
+    - image.style.full_screen_banner
     - node.type.article
   module:
+    - flickity_views
+    - image
     - node
     - tiny_slider
     - user
@@ -23,7 +28,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Carousel Xingu'
+      title: 'Carousel Xingu (Tiny Slider)'
       fields:
         title:
           id: title
@@ -88,11 +93,16 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        field_image:
+          id: field_image
+          table: node__field_image
+          field: field_image
+          plugin_id: field
       pager:
         type: some
         options:
           offset: 0
-          items_per_page: 5
+          items_per_page: 3
       exposed_form:
         type: basic
         options:
@@ -156,33 +166,11 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: tiny_slider
+        type: flickity_views
         options:
           row_class: ''
           default_row_class: true
-          uses_fields: false
-          items: '3'
-          margin: '0'
-          nav: 1
-          navPosition: top
-          autoplay: 0
-          autoplayHoverPause: 0
-          autoplayButtonOutput: 0
-          autoplayPosition: top
-          autoplayTextStart: start
-          autoplayTextStop: stop
-          controls: 0
-          controlsPosition: top
-          controlsTextPrev: prev
-          controlsTextNext: next
-          arrowKeys: 0
-          mouseDrag: 1
-          loop: 1
-          speed: '300'
-          dimensionMobile: ''
-          itemsMobile: ''
-          dimensionDesktop: ''
-          itemsDesktop: ''
+          settings: default_group
       row:
         type: 'entity:node'
         options:
@@ -197,6 +185,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      use_ajax: true
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -207,13 +196,53 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_image'
   block_carousel_xingu:
     id: block_carousel_xingu
-    display_title: Block
+    display_title: Carousel
     display_plugin: block
     position: 1
     display_options:
+      style:
+        type: tiny_slider
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+          items: '3'
+          margin: '0'
+          nav: 1
+          navPosition: bottom
+          autoplay: 0
+          autoplayHoverPause: 0
+          autoplayButtonOutput: 0
+          autoplayPosition: top
+          autoplayTextStart: start
+          autoplayTextStop: stop
+          controls: 1
+          controlsPosition: bottom
+          controlsTextPrev: prev
+          controlsTextNext: next
+          arrowKeys: 0
+          mouseDrag: 0
+          loop: 1
+          speed: '300'
+          dimensionMobile: ''
+          itemsMobile: ''
+          dimensionDesktop: ''
+          itemsDesktop: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
+      defaults:
+        use_ajax: false
+        style: false
+        row: false
+      use_ajax: false
+      display_description: ''
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -222,4 +251,237 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_image'
+  block_publicacoes:
+    id: block_publicacoes
+    display_title: Publicações
+    display_plugin: block
+    position: 1
+    display_options:
+      title: 'Publicações (Flickity)'
+      fields:
+        field_tags:
+          id: field_tags
+          table: node__field_tags
+          field: field_tags
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_image:
+          id: field_image
+          table: node__field_image
+          field: field_image
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_link: ''
+            image_style: full_screen_banner
+            image_loading:
+              attribute: lazy
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      style:
+        type: flickity_views
+        options:
+          row_class: ''
+          default_row_class: true
+          settings: default_group
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      defaults:
+        title: false
+        use_ajax: false
+        style: false
+        row: false
+        fields: false
+      use_ajax: true
+      display_description: ''
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_tags'
