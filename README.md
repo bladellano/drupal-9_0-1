@@ -83,5 +83,7 @@ gulp watch
 * Views_argument_token
 * Field_group
 * Superfish
+* Flickty - Replace for Bootstrap Simple Carousel 8 || 9
 * Flood-control - O Flood Control fornece uma interface para variáveis ​​ocultas de controle de inundação
+* Tiny Slider - Replace for Owl Carousel
 ```
