@@ -1,0 +1,17 @@
+uuid: a685e5ca-9e28-4642-ac39-144ac5b6ff4a
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Membros
+type: members
+description: 'Duis beef cupim, picanha boudin bacon tail officia. Dolore brisket pork loin tri-tip corned beef turkey dolore labore short ribs laborum fugiat. Pork loin swine culpa meatball incididunt venison landjaeger do. Capicola ut flank, quis excepteur est proident occaecat tenderloin tongue officia fugiat short ribs picanha aliqua.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

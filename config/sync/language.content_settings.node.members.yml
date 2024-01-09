@@ -1,0 +1,11 @@
+uuid: 6812a1e7-5302-46eb-9e46-37ca61e3cd72
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.members
+id: node.members
+target_entity_type_id: node
+target_bundle: members
+default_langcode: site_default
+language_alterable: false

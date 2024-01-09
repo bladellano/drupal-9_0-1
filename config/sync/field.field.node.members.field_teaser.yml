@@ -1,0 +1,19 @@
+uuid: e74b217f-727f-4445-84cb-65db4ab6cf07
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.members
+id: node.members.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: members
+label: Resumo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

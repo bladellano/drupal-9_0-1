@@ -1,0 +1,105 @@
+{%
+set classes = [
+'block',
+'block-' ~ configuration.provider|clean_class,
+'block-' ~ plugin_id|clean_class,
+]
+%}
+<div{{attributes.addClass(classes)}}>
+    {{ title_prefix }}
+    {% if label %}
+    <h2{{title_attributes}}>{{ label }}</h2>
+        {% endif %}
+        {{ title_suffix }}
+
+        <div class="container">
+
+            <div class="row">
+
+                {% block content %}
+
+                    {%
+                        set rows = content.view_build['#rows'][0]['#rows']
+                    %}
+
+                    <div class="col-md-6 map">
+
+                        <div class="content-mapa-corredor">
+
+                            {% for key, row in rows %}
+
+                                {% set node = row['#row']._entity %}
+                                {% set coordinates = node.field_geolocation.value|split(',') %}
+                                {% set id = node.nid.value %}
+                                {% set title = node.title.value %}
+                                {% set photo = node.field_featured_photo.entity.uri.value %}
+                                {% set teaser = node.field_teaser.value %}
+
+                                <a 
+                                    href="{{ path('entity.node.canonical', {'node': id}) }}" 
+                                    title="{{ title }}"
+                                >
+                                    <img 
+                                        data-bs-toggle="popover"
+                                        class="maptriangle map-popover" 
+                                        src="/themes/custom/xinguBootstrap/images/circle-active.png" 
+                                        style="top:{{coordinates.0}}px; left:{{coordinates.1}}px;" 
+                                        data-id="{{ id }}" 
+                                    />
+                                </a>
+
+                                <div class="popover-markup-{{ id }} hidden">
+                                    
+                                    <div class="popover-content">
+                                        <div class="hero ratio ratio-1x1">
+                                            <img 
+                                                src="{{ file_url(photo) }}" 
+                                                class="img-fluid object-fit-cover" 
+                                            />
+                                        </div>
+                                        <div class="title">
+                                            <h3 class="bg-danger text-white text-center">{{ title }}</h3>
+                                        </div>
+
+                                        <div class="teaser">
+                                            <p class="text-center">{{ teaser }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            {% endfor %}
+                            
+                        </div> {# ./content-mapa-corredor #}
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <ul class="list-map-corredor">
+
+                            {% for key, row in rows %}
+
+                                {%
+                                    set node = row['#row']._entity
+                                %}
+
+                                <li id="list{{ key }}" class="mapitemlist"> 
+                                    <a href="{{ path('entity.node.canonical', {'node': node.nid.value}) }}" data-id="{{ node.nid.value }}"> 
+                                        {{ node.title.value }} <br/>
+                                        <small>{{ node.field_teaser.value }}</small>
+                                    </a>
+                                </li> 
+
+                            {% endfor %}
+
+                        </ul> {# /.list-map-corredor #}
+
+                    </div>
+
+                {% endblock %}
+
+            </div>
+
+        </div> {# ./container #}
+
+    </div>

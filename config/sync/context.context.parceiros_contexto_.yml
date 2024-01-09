@@ -1,0 +1,47 @@
+uuid: 45ddec98-2b27-4feb-b316-ce31de5bf74a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.list_of_member_names
+  module:
+    - system
+    - views
+label: 'Parceiros (Contexto)'
+name: parceiros_contexto_
+group: null
+description: 'Andouille voluptate short loin in, chislic turducken official'
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    uuid: 1e0d186e-0698-45ef-8767-bdc4a25f4812
+    context_mapping: {  }
+    pages: /parceiros
+reactions:
+  blocks:
+    id: blocks
+    uuid: a6fa2a9f-348f-4b4c-a9c2-a6188912c1cb
+    blocks:
+      d4902e81-bf5a-417f-83cc-702efcd51a24:
+        uuid: d4902e81-bf5a-417f-83cc-702efcd51a24
+        id: 'views_block:list_of_member_names-block_list_of_member_names'
+        label: ''
+        provider: views
+        label_display: '0'
+        region: content
+        weight: '0'
+        custom_id: views_block_list_of_member_names_block_list_of_member_names
+        theme: xinguBootstrap
+        css_class: block-map-members
+        unique: 0
+        context_id: parceiros_contexto_
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+    include_default_blocks: 0
+    saved: false
+weight: 0

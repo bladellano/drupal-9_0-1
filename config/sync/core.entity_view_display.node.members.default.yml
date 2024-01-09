@@ -1,0 +1,54 @@
+uuid: 79fbe992-4e70-47ab-8780-cc22106dca3d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.members.field_display_title
+    - field.field.node.members.field_featured_photo
+    - field.field.node.members.field_geolocation
+    - field.field.node.members.field_teaser
+    - node.type.members
+  module:
+    - image
+    - user
+id: node.members.default
+targetEntityType: node
+bundle: members
+mode: default
+content:
+  field_featured_photo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_geolocation:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_teaser:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_display_title: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,22 @@
+uuid: a2b76241-4d10-4bed-8a2a-0731f44347c8
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: members
+label: Membros
+type: 'canonical_entities:node'
+pattern: 'parceiro/[node:title]'
+selection_criteria:
+  d3b5ff5a-a4a0-4af4-9218-5604352e4845:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: d3b5ff5a-a4a0-4af4-9218-5604352e4845
+    context_mapping:
+      node: node
+    bundles:
+      members: members
+selection_logic: and
+weight: -5
+relationships: {  }

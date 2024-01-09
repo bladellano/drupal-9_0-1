@@ -1,0 +1,30 @@
+uuid: 99e6aaec-450b-47a1-b069-44fae883fad7
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.members.field_display_title
+    - field.field.node.members.field_featured_photo
+    - field.field.node.members.field_geolocation
+    - field.field.node.members.field_teaser
+    - node.type.members
+  module:
+    - user
+id: node.members.teaser
+targetEntityType: node
+bundle: members
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_display_title: true
+  field_featured_photo: true
+  field_geolocation: true
+  field_teaser: true
+  langcode: true
+  search_api_excerpt: true
