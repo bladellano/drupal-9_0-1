@@ -1,0 +1,17 @@
+# ultimate_block_guide.libraries.yml
+ultimate:
+  version: VERSION
+  js:
+    js/scripts.js: {}
+  dependencies:
+    - core/jquery
+  css:
+    theme:
+      css/styles.css: {}
+
+ultimate.hoverintent:
+  js:
+    js/jquery.hoverIntent.js: {}
+    js/admin_toolbar.hoverintent.js: {}
+  dependencies:
+    - core/jquery

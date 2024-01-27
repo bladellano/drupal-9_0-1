@@ -63,6 +63,7 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  ultimate_block_guide: 0
   update: 0
   user: 0
   views_argument_token: 0
