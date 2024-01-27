@@ -34,6 +34,7 @@ module:
   flickity_fields: 0
   flickity_views: 0
   flood_control: 0
+  helloworld: 0
   help: 0
   history: 0
   image: 0

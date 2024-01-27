@@ -2,7 +2,7 @@
 
     $(function () {
 
-        alert('Hello Ultima Block!!')
+        // alert('Hello Ultima Block!!')
     })
 
 })(jQuery);

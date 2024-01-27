@@ -6,6 +6,7 @@ dependencies:
     - views.view.carousel_xingu
   module:
     - context
+    - system
     - views
   theme:
     - xinguBootstrap
@@ -42,3 +43,7 @@ visibility:
     id: context
     negate: null
     values: ''
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

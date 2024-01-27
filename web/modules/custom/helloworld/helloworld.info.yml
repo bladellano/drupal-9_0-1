@@ -1,0 +1,5 @@
+name: HelloWorld
+type: module
+description: 'Custom Module Test Hello World'
+package: custom
+core_version_requirement: ^9 || ^10

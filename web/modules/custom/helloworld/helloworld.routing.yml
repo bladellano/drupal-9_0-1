@@ -1,0 +1,18 @@
+helloworld.hellomsg:
+  path: '/hello-world'
+  defaults:
+    _title: 'Page of HelloWorld!!'
+    _controller: '\Drupal\helloworld\Controller\HelloworldController::message'
+  requirements:
+    _permission: 'access content'
+
+helloworld.catfact:
+  path: '/get-cat-facts'
+  defaults:
+    _title: 'Cat Facts'
+    _controller: '\Drupal\helloworld\Controller\ApiController::getFact'
+  requirements:
+    _permission: 'access content'
+
+
+
