@@ -1,0 +1,41 @@
+uuid: 991de993-5c14-4837-904c-e22cfd513959
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - context
+    - ultimate_block_guide
+  theme:
+    - xinguBootstrap
+id: ultimateguidetoblocksbasic
+theme: xinguBootstrap
+region: sidebar_first
+weight: 0
+provider: null
+plugin: ultimate_block_basic
+settings:
+  id: ultimate_block_basic
+  label: 'Ultimate guide to blocks: basic'
+  label_display: '0'
+  provider: ultimate_block_guide
+  message: Lorem...
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context:
+    id: context
+    negate: null
+    values: ''
