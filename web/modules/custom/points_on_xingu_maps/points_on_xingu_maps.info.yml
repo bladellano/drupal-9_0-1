@@ -1,0 +1,5 @@
+name: Points on Xingu Maps
+type: module
+description: Get coordinates to add to the map
+package: ox
+core_version_requirement: ^9 || ^10

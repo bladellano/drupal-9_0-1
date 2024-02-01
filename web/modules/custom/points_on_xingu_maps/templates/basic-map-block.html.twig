@@ -1,0 +1,40 @@
+{% if text is defined  %}
+	<p>{{ text }}</p>
+{% endif %}
+
+<div class="content-map">
+
+		{% for nid, item in items %}
+		
+			{% for key, points in item.points %}
+
+				{% set coordinates = points ? points|split(",") : [0,0] %}
+
+				    <a href="{{ item.url }}" title="{{ item.name }}">
+						<img
+						data-id = "{{ nid }}_{{ key }}"
+						data-bs-toggle="popover"
+						class="active"
+						src="/themes/custom/xinguBootstrap/images/mapa/circle-active.png"
+						style="top:{{coordinates.0|trim}}px; left:{{coordinates.1|trim}}px;"
+						/>
+					</a> 
+					     
+					<div class="popover-markup-{{ nid }}_{{ key }} hidden">
+						<img src="{{ file_url(item.photo) }}" class="img-fluid object-fit-cover"/>
+							<p 
+							class="text-white text-center text-uppercase fs-8 fw-bold py-2" 
+							>
+								{{ item.name }}
+							</p>
+					</div>
+
+			{% endfor %}
+
+		{% else %}
+
+			<p class="text-danger text-center">Nenhum ponto foi encontrado para mapa.</p>
+
+		{% endfor %}
+
+</div>

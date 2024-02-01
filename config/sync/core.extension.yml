@@ -51,6 +51,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  points_on_xingu_maps: 0
   search: 0
   search_api: 0
   search_api_db: 0

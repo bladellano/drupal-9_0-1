@@ -1,0 +1,21 @@
+#block-mapblock {
+
+    .content-map {
+        position: relative;
+        display: block;
+        width: 250px;
+        height: 618px;
+        background: url('/themes/custom/xinguBootstrap/images/mapa/mapa.png');
+        float: right;
+        margin-bottom: 20px;
+
+        a>img {
+
+            &.outline,
+            &.active {
+                position: absolute;
+                cursor: pointer;
+            }
+        }
+    }
+}
