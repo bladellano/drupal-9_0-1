@@ -1,0 +1,6 @@
+form_custom.simple_custom_module:
+  path: '/simple-custom-form'
+  defaults:
+    _form: '\Drupal\form_custom\Form\SimpleCustomForm'
+  requirements:
+    _access: 'TRUE'
